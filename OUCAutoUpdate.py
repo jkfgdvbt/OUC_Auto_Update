@@ -12,12 +12,12 @@ url = 'https://pingan.ouc.edu.cn/ncov/wap/default/save'
 Cookies = {'eai-sess': Loginkey}
 
 headers = {
-	'Accept':'application/json, text/javascript, */*; q=0.01',
-	'Referer':'https://pingan.ouc.edu.cn/ncov/wap/default/index',
-	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
-	'X-Requested-With':'XMLHttpRequest',
-	'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-	}
+    'Accept':'application/json, text/javascript, */*; q=0.01',
+    'Referer':'https://pingan.ouc.edu.cn/ncov/wap/default/index',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
+    'X-Requested-With':'XMLHttpRequest',
+    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+}
 
 r = requests.post(url,data = form_data,headers = headers,cookies = Cookies)
 
